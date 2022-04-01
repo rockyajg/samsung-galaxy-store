@@ -1,0 +1,52 @@
+{
+  "name": "samsung-galaxy-store",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "postinstall": "node ./node_modules/frontend-dependencies/index.js",
+    "start": "NODE_OPTIONS=--experimental-vm-modules npx @11ty/eleventy --serve --config=.eleventy.cjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.0",
+    "@11ty/eleventy-img": "^2.0.0",
+    "@lit-labs/eleventy-plugin-lit": "^0.2.0",
+    "eleventy-plugin-metagen": "^1.6.1",
+    "eleventy-plugin-postcss": "^1.0.4",
+    "frontend-dependencies": "^2.0.0",
+    "open-props": "^1.3.9",
+    "outdent": "^0.8.0",
+    "postcss-custom-media": "^8.0.0",
+    "postcss-import": "^14.1.0",
+    "postcss-jit-props": "^1.0.5",
+    "postcss-nesting": "^10.1.3"
+  },
+  "dependencies": {
+    "@webcomponents/template-shadowroot": "^0.1.0",
+    "markdown-it-container": "^3.0.0"
+  },
+  "frontendDependencies": {
+    "target": "_site/node_modules/",
+    "packages": {
+      "lit": {
+        "version": "^2.0.2",
+        "src": "experimental-hydrate-support.js",
+        "namespaced": true
+      },
+      "lit-element": {
+        "version": "^3.2.0",
+        "src": "experimental-hydrate-support.js",
+        "namespaced": true
+      },
+      "lit-html": {
+        "version": "^2.2.1",
+        "src": "experimental-hydrate.js",
+        "namespaced": true
+      }
+    }
+  }
+}

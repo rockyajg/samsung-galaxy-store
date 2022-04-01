@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://unpkg.com/open-props" />
+    <link rel="stylesheet" href="https://unpkg.com/open-props/normalize.min.css" />
+    <link rel="stylesheet" href="/_css/fonts.css" />
+    <link rel="stylesheet" href="/_css/index.css" />
+  </head>
+  <body class="index">
+    <header class="global">
+      <h1 class="heading">{{ title }}</h1>
+    </header>
+    <main class="global {{ main-class }}">
+      {{ content }}
+      <section class="section-apps">
+        {%- for app in collections.apps -%}
+          <figure>
+            <a href="{{ app.url }}">
+              <img src="{{ app.data.image }}" alt="{{ app.data.title }}" />
+              <figcaption>{{ app.data.title }}</figcaption>
+            </a>
+          </figure>
+        {%- endfor -%}
+      </section>
+    </main>
+    <footer class="global">
+      <span class="copyright">&copy; <a href="http://www.gamebake.io">GameBake</a> 2022</span>
+    </footer>
+  </body>
+</html>

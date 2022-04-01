@@ -1,0 +1,89 @@
+@import "base.css";
+
+:where(header, main, footer) {
+  justify-content: center;
+  padding-inline: var(--size-3);
+}
+
+header.global {
+  padding-block: var(--size-8);
+
+  @media (--md-n-above) {
+    & {
+      padding-block: var(--size-10);
+    }
+  }
+
+  @media (--lg-n-above) {
+    & {
+      padding-block: var(--size-12);
+    }
+  }
+}
+
+main {
+  & :where(blockquote, h1, h2, h3, h4, h5, h6, .heading) {
+    margin-block-end: var(--size-3);
+  }
+
+  & :where(h1) {
+    font-size: var(--font-size-5);
+  }
+
+  & :where(h2) {
+    font-size: var(--font-size-4);
+  }
+
+  & :where(h3) {
+    font-size: var(--font-size-3);
+  }
+
+  & :where(h4) {
+    font-size: var(--font-size-2);
+  }
+
+  & p {
+    & + :where(blockquote, h1, h2, h3, h4, h5, h6, .heading) {
+      margin-block-start: var(--size-8);
+    }
+  }
+}
+
+.section-apps {
+  display: grid;
+  padding-block: var(--size-6);
+  gap: var(--size-3);
+  grid-template-columns: repeat(2, 1fr);
+  margin-block-start: var(--size-8);
+  place-items: center;
+  text-align: center;
+
+  @media (--md-n-above) {
+    & {
+      grid-template-columns: repeat(4, 1fr);
+      max-width: var(--size-sm);
+    }
+  }
+
+  @media (--lg-n-above) {
+    & {
+      grid-template-columns: repeat(6, 1fr);
+      max-width: var(--size-md);
+    }
+  }
+
+
+  & figure {
+    & img {
+      margin-block-end: var(--size-2);
+    }
+
+    & figcaption {
+      font-size: var(--font-size-1);
+    }
+  }
+}
+
+footer.global {
+  padding: var(--size-8);
+}

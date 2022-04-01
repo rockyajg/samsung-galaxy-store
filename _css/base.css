@@ -1,0 +1,32 @@
+html {
+  min-height: 100%;
+}
+
+body {
+  min-block-size: 100%;
+  display: grid;
+  font-family: "SamsungOne", var(--font-serif);
+}
+
+main {
+  display: grid;
+}
+
+:where(blockquote, h1, h2, h3, h4, h5, h6, .heading) {
+  /* font-family: "SamsungSharpSans", var(--font-sans); */
+  font-family: "SamsungOne", var(--font-serif);
+}
+
+.visually-hidden {
+  display: none;
+}
+
+[class^="icon-"] {
+  aspect-ratio: var(--ratio-square);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.global {
+  display: grid;
+}
