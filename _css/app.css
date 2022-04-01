@@ -21,18 +21,35 @@
 }
 
 header.global {
-    background-color: var(--surface-1);
+  align-items: center;
+  background-color: var(--surface-1);
   display: grid;
-  grid-template-columns: auto 1fr auto;
+  grid-template-columns: var(--size-7) 1fr var(--size-7) var(--size-7);
   height: var(--size-9);
   justify-items: center;
   padding-block: var(--size-3);
+  padding-inline: var(--size-3);
   position: sticky;
   top: 0;
 
-  & [class^="icon-"] {
-    height: 28px;
-    margin-inline: 10px;
+  & .icon {
+    padding-block: unset;
+    padding-inline: var(--size-1);
+
+    &.inverse-fill {
+      color: var(--text-1);
+      /* fill: var(--text-1);
+      outline: var(--text-1); */
+
+      & svg {
+        fill: currentColor;
+      }
+    }
+
+    & svg {
+      height: 32px;
+      max-width: 24px;
+    }
   }
 
   & h1 {
