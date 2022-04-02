@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "postinstall": "node ./node_modules/frontend-dependencies/index.js",
+    "build": "npx @11ty/eleventy --config=.eleventy.cjs",
     "start": "NODE_OPTIONS=--experimental-vm-modules npx @11ty/eleventy --serve --config=.eleventy.cjs"
   },
   "keywords": [],
