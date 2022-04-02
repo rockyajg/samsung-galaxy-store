@@ -1,0 +1,13 @@
+[class^="icon-"] {
+  aspect-ratio: var(--ratio-square);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.global {
+  display: grid;
+}
+
+.visually-hidden {
+  display: none;
+}

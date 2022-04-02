@@ -1,8 +1,14 @@
 @import "base.css";
+@import "typography.css";
+@import "utilities.css";
 
-:where(header, main, footer) {
+:where(header.global, main.global, footer.global) {
   justify-content: center;
   padding-inline: var(--size-3);
+}
+
+footer.global {
+  padding: var(--size-8);
 }
 
 header.global {
@@ -52,8 +58,4 @@ header.global {
       font-size: var(--font-size-1);
     }
   }
-}
-
-footer.global {
-  padding: var(--size-8);
 }

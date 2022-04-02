@@ -1,4 +1,6 @@
 @import "base.css";
+@import "typography.css";
+@import "utilities.css";
 
 :where(header.global, footer.global) {
   display: grid;
@@ -20,8 +22,6 @@ header.global {
 
     &.inverse-fill {
       color: var(--text-1);
-      /* fill: var(--text-1);
-      outline: var(--text-1); */
 
       & svg {
         fill: currentColor;
