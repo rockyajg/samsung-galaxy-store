@@ -21,34 +21,6 @@ header.global {
   }
 }
 
-main {
-  & :where(blockquote, h1, h2, h3, h4, h5, h6, .heading) {
-    margin-block-end: var(--size-6);
-  }
-
-  & :where(h1) {
-    font-size: var(--font-size-5);
-  }
-
-  & :where(h2) {
-    font-size: var(--font-size-4);
-  }
-
-  & :where(h3) {
-    font-size: var(--font-size-3);
-  }
-
-  & :where(h4) {
-    font-size: var(--font-size-2);
-  }
-
-  & :where(p, pre, ol, ul) {
-    & + :where(blockquote, h1, h2, h3, h4, h5, h6, .heading) {
-      margin-block-start: var(--size-8);
-    }
-  }
-}
-
 .section-apps {
   display: grid;
   gap: var(--size-3);
