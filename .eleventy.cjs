@@ -69,4 +69,6 @@ module.exports = function (eleventyConfig) {
   md.use(markdownItContainer, 'text');
   
   eleventyConfig.setLibrary('md', md);
+
+  eleventyConfig.addFilter('dateYear', (date) => new Date(date).getFullYear());
 };
