@@ -9,6 +9,14 @@ const markdownIt = require('markdown-it');
 const markdownItContainer = require('markdown-it-container');
 // const outdent = require('outdent');
 
+const config = require("./config.json");
+
+async function configShortcode(property) {
+  const dotProp = await import('dot-prop');
+
+  return dotProp.getProperty(config, property);
+}
+
 async function imageShortcode(src, alt, sizes = '100vw') {
   let metadata = await Image(src, {
     formats: [
@@ -42,6 +50,7 @@ module.exports = function (eleventyConfig) {
   //   functionsDir: './netlify/functions/',
   // });
 
+  eleventyConfig.addShortcode('config', configShortcode);
   eleventyConfig.addShortcode('image', imageShortcode);
 
   // eleventyConfig.addPlugin(metagen);

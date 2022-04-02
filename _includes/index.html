@@ -26,7 +26,7 @@
       </section>
     </main>
     <footer class="global">
-      <span class="copyright">&copy; <a href="http://www.gamebake.io">GameBake</a> 2022</span>
+      <span class="copyright">&copy; <a href="{% config 'brand.url' %}">{% config 'brand.name' %}</a> <time datetime="{{ page.date | dateYear }}">{{ page.date | dateYear }}</time></span>
     </footer>
   </body>
 </html>
