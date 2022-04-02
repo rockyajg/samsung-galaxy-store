@@ -23,7 +23,7 @@ header.global {
 
 main {
   & :where(blockquote, h1, h2, h3, h4, h5, h6, .heading) {
-    margin-block-end: var(--size-3);
+    margin-block-end: var(--size-6);
   }
 
   & :where(h1) {
@@ -42,7 +42,7 @@ main {
     font-size: var(--font-size-2);
   }
 
-  & p {
+  & :where(p, pre, ol, ul) {
     & + :where(blockquote, h1, h2, h3, h4, h5, h6, .heading) {
       margin-block-start: var(--size-8);
     }
@@ -51,10 +51,8 @@ main {
 
 .section-apps {
   display: grid;
-  padding-block: var(--size-6);
   gap: var(--size-3);
   grid-template-columns: repeat(2, 1fr);
-  margin-block-start: var(--size-8);
   place-items: center;
   text-align: center;
 
