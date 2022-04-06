@@ -1,7 +1,8 @@
 ---
-title: App 1
+title: Ultimate Car Driving Simulator
 layout: app.html
-image: /apps/app-1/images/IconImage_20211208043354629_NEW_WAP_ICON_512_512.png
+icon: /apps/app-1/images/IconImage_20211208043354629_NEW_WAP_ICON_512_512.png
+banner: /apps/app-1/images/banner.jpg
 developer: Sir Studios
 price: null
 in-app-purchases: true

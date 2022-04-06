@@ -4,8 +4,61 @@
   background-size: contain;
 }
 
+:where(.container, .grid > ul) {
+  width: 100%;
+
+  @media (--md-n-above) {
+    & {
+      grid-template-columns: repeat(3, 1fr);
+      max-width: var(--size-md);
+    }
+  }
+
+  @media (--lg-n-above) {
+    & {
+      max-width: var(--size-lg);
+    }
+  }
+
+  @media (--xl-n-above) {
+    & {
+      max-width: var(--size-xl);
+    }
+  }
+
+  @media (--xxl-n-above) {
+    & {
+      max-width: var(--size-xxl);
+    }
+  }
+}
+
 .global {
   display: grid;
+}
+
+.grid {
+  display: grid;
+  justify-content: center;
+  padding-inline: var(--size-3);
+
+  & ul {
+    display: grid;
+    gap: var(--size-3);
+    grid-template-columns: repeat(auto-fill, minmax(var(--size-14), 1fr));
+    list-style: none;
+    padding: 0;
+
+    & li {
+      padding-inline-start: unset;
+
+      & img {
+        height: 100%;
+        object-fit: cover;
+        width: 100%;
+      }
+    }
+  }
 }
 
 .visually-hidden {

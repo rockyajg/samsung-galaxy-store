@@ -1,3 +1,4 @@
+@import "../node_modules/open-props/src/extra/normalize.css";
 @import "base.css";
 @import "typography.css";
 @import "utilities.css";

@@ -62,7 +62,10 @@ module.exports = function (eleventyConfig) {
     '_js': '_js',
   });
 
-  eleventyConfig.addPassthroughCopy('apps/**/*.png', 'apps/**/*.jpeg', 'apps/**/*.jpg', 'apps/**/*.svg');
+  eleventyConfig.addPassthroughCopy('apps/**/*.png');
+  eleventyConfig.addPassthroughCopy('apps/**/*.jpeg');
+  eleventyConfig.addPassthroughCopy('apps/**/*.jpg');
+  eleventyConfig.addPassthroughCopy('apps/**/*.svg');
 
   eleventyConfig.addCollection('apps', (collectionApi) => collectionApi.getFilteredByGlob(['apps/**/*.md']));
 

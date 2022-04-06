@@ -3,8 +3,6 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="https://unpkg.com/open-props" />
-    <link rel="stylesheet" href="https://unpkg.com/open-props/normalize.min.css" />
     <link rel="stylesheet" href="/_css/fonts.css" />
     <link rel="stylesheet" href="/_css/index.css" />
   </head>
@@ -18,7 +16,7 @@
         {%- for app in collections.apps -%}
           <figure>
             <a href="{{ app.url }}">
-              <img src="{{ app.data.image }}" alt="{{ app.data.title }}" />
+              <img src="{{ app.data.icon }}" alt="{{ app.data.title }}" />
               <figcaption>{{ app.data.title }}</figcaption>
             </a>
           </figure>

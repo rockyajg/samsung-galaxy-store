@@ -3,8 +3,8 @@ html {
 }
 
 body {
-  min-block-size: 100%;
   display: grid;
+  min-block-size: 100%;
 }
 
 main {

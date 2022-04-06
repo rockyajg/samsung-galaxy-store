@@ -1,7 +1,7 @@
 ---
 title: App 4
 layout: app.html
-image: /apps/app-4/images/IconImage_20220314043652719_NEW_WAP_ICON_512_512.png
+icon: /apps/app-4/images/IconImage_20220314043652719_NEW_WAP_ICON_512_512.png
 ---
 
 # Page header
