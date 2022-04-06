@@ -5,7 +5,6 @@ let lastKnownScrollPosition = 0;
 let ticking = false;
 
 function onScroll(scrollPos) {
-    console.log(scrollPos);
   if (scrollPos > main.offsetTop) {
     nav.classList.add("scrolled");
   } else {

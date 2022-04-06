@@ -9,6 +9,11 @@ body {
   /* background-size: contain; */
 }
 
+a {
+  &:active {
+    text-decoration: none;
+  }
+}
 header.global {
   display: grid;
 }
