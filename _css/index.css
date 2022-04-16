@@ -29,10 +29,11 @@ header.global {
 }
 
 .section-apps {
+  align-items: start;
   display: grid;
   gap: var(--size-3);
   grid-template-columns: repeat(2, 1fr);
-  place-items: center;
+  justify-content: center;
   text-align: center;
 
   @media (--md-n-above) {
