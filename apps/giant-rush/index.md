@@ -1,5 +1,5 @@
 ---
-title: Ultimate Car Driving Simulator
+title: Giant Rush!
 layout: app.html
 icon: /apps/giant-rush/images/IconImage_20211208043354629_NEW_WAP_ICON_512_512.png
 banner: /apps/giant-rush/images/banner.jpg
@@ -17,7 +17,7 @@ keywords:
     - Tense
     - Exciting
     - Arcade
-pixel-id: 349993890485778
+pixel-id: 572210560705801
 ---
 
 ::: images
