@@ -1,7 +1,7 @@
 ---
 title: Giant Rush!
 layout: app.html
-url: https://galaxystore.samsung.com/preorder/000006148958
+url: https://galaxystore.samsung.com/detail/com.hypercarrot.giantrush.samsung
 icon: /apps/giant-rush/images/IconImage_20211208043354629_NEW_WAP_ICON_512_512.png
 banner: /apps/giant-rush/images/banner.jpg
 developer: TapNation
